@@ -1,7 +1,15 @@
 {
   "extends": ["airbnb", "prettier", "plugin:react/jsx-runtime"],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "import/no-named-as-default": 0,
+    "import/no-named-as-default-member": 0
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "document": true
   }
 }
 
