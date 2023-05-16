@@ -3,8 +3,23 @@
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
     "import/no-named-as-default": 0,
-    "import/no-named-as-default-member": 0
+    "import/no-named-as-default-member": 0,
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ]
   },
+  "settings": {
+    "import/resolver": {
+    "node": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "moduleDirectory": ["node_modules", "src/"]
+    }
+    }
+    },
   "env": {
     "jest": true
   },
